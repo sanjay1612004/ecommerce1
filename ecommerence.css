@@ -228,6 +228,7 @@ body{
     flex-wrap: wrap;
 }
 .i5{
+    display:none;
     height: 250px;
     width: 250px;
     background-image: url(eimgs/laptops.jpg);
@@ -237,7 +238,7 @@ body{
     background-color: #01010D;
     margin: 0 auto;
     margin-top: 15px;
-    display:none;
+   
 }
 .i6{
     height: 250px;
