@@ -237,6 +237,7 @@ body{
     background-color: #01010D;
     margin: 0 auto;
     margin-top: 15px;
+    display:none;
 }
 .i6{
     height: 250px;
