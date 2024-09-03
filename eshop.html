@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ecommerence.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+<div class="nav">
+    <div class="nav_content">
+        <a href="ecommerence.html?"><i class="fa-solid fa-arrow-left"></i></a>
+        <ul>
+            <li><a href="" id="ul">Home</a></li>
+            <li><a href="" id="ul">Products</a></li>
+            <li><a href="" id="ul">About</a></li>
+            <li><a href="" id="ul">Contact</a></li>
+            <li><a href="eshop.html" class="cart" ><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </div>
+</div>
+<!-- -----shopping cart---- -->
+<div class="s-container cart-page">
+    <table>
+        <tr>
+            <th class="prd">Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr class='subrow'  id="r1">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/s1.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>white casual T shirt cotton</p>
+                        <small>price: $83.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r1"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="number" value='1' class="quantiynum"></td>
+            <td class="sprice">$83.0</td>
+        </tr>
+        <tr class='subrow' id="r2">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/s2.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>checked shirt with cap</p>
+                        <small>price: $76.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r2"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$76.0</td>
+        </tr>
+        <tr class='subrow' id="r3">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/s3.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>checked shirt cotton</p>
+                        <small>price: $67.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r3"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$67.0</td>
+        </tr>
+        <tr class='subrow' id="r4">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/s4.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>wollen shirt</p>
+                        <small>price: $46.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r4"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$46.0</td>
+        </tr>
+        <tr class='subrow' id="r5">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/s5.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>sleek grey dress shirt</p>
+                        <small>price: $17.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r5"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$17.0</td>
+        </tr>
+        <tr class='subrow' id="r6">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/s6.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>green button up shirt</p>
+                        <small>price: $55.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r6"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$55.0</td>
+        </tr>
+        <tr class='subrow' id="r7">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/s7.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>paisley print shirt</p>
+                        <small>price: $10.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r7"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$10.0</td>
+        </tr>
+        <tr class='subrow' id="r8">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/s8.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>plaid button-down shirt</p>
+                        <small>price: $60.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r8"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$60.0</td>
+        </tr>
+        <tr class='subrow' id="r9">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/w1.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Essential Beauty Picks</p>
+                        <small>price: $150.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r9"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$150.0</td>
+        </tr>
+        <tr class='subrow' id="r10">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/w2.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Mars Liquid Foundation</p>
+                        <small>price: $80.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r10"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$80.0</td>
+        </tr>
+        <tr class='subrow' id="r11">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/w3.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>maybelline foundation</p>
+                        <small>price: $60.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r11"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$60.0</td>
+        </tr>
+        <tr class='subrow' id="r12">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/w4.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>sugar lipstick</p>
+                        <small>price: $50.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r12"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$50.0</td>
+        </tr>
+        <tr class='subrow' id="r13">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/w5.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>lakme vit c serem</p>
+                        <small>price: $40.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r13"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$40.0</td>
+        </tr>
+        <tr class='subrow' id="r14">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/w6.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>lakme serem</p>
+                        <small>price: $55.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r14"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$55.0</td>
+        </tr>
+        <tr class='subrow' id="15">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/w7.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>insight</p>
+                        <small>price: $110.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r15"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$110.0</td>
+        </tr>
+        <tr class='subrow' id="r16">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/w8.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>lakme cc cream</p>
+                        <small>price: $20.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r16"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$20.0</td>
+        </tr>
+        <tr class='subrow' id="r17">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/sh1.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Black Sneakers with Sole</p>
+                        <small>price: $170.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r17"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$170.0</td>
+        </tr>
+        <tr class='subrow' id="r18">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/sh2.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Black Casual Sneakers</p>
+                        <small>price: $70.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r18"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$70.0</td>
+        </tr>
+        <tr class='subrow' id="r19">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/sh3.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Low-Top Sneakers</p>
+                        <small>price: $160.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r19"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$160.0</td>
+        </tr>
+        <tr class='subrow' id="r20">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/sh4.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Sleek Urban Sneakers</p>
+                        <small>price: $510.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r20"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$510.0</td>
+        </tr>
+        <tr class='subrow' id="r21">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/sh5.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Urban Chic Sneakers</p>
+                        <small>price: $140.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r21"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$140.0</td>
+        </tr>
+        <tr class='subrow' id="r22">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/sh6.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>White Sports Sneakers</p>
+                        <small>price: $155.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r22"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$155.0</td>
+        </tr>
+        <tr class='subrow' id="r23">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/sh7.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Monochrome Sneakers</p>
+                        <small>price: $50.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r23"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$50.0</td>
+        </tr>
+        <tr class='subrow' id="r24">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/sh8.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>High-Top Sneakers</p>
+                        <small>price: $40.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r24"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$40.0</td>
+        </tr>
+        <tr class='subrow' id="r25">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/eb1.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Wireless In-Ear tws</p>
+                        <small>price: $80.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r25"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$80.0</td>
+        </tr>
+        <tr class='subrow' id="r26">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/eb2.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Black Wireless Earbuds</p>
+                        <small>price: $70.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r26"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$70.0</td>
+        </tr>
+        <tr class='subrow' id="r27">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/eb3.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>noise wireless earphones</p>
+                        <small>price: $60.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r27"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$60.0</td>
+        </tr>
+        <tr class='subrow' id="r28">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/eb4.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>noise dolby atoms tws</p>
+                        <small>price: $60.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r28"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$60.0</td>
+        </tr>
+        <tr class='subrow' id="r29">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/eb5.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>boat wireless tws</p>
+                        <small>price: $55.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r29"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$55.0</td>
+        </tr>
+        <tr class='subrow' id="r30">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/eb6.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Earbuds with LED Display</p>
+                        <small>price: $120.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r30"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$120.0</td>
+        </tr>
+        <tr class='subrow' id="r31">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/eb7.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>stylish tws</p>
+                        <small>price: $50.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r31"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$50.0</td>
+        </tr>
+        <tr class='subrow' id="r32">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/eb8.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>High-Top Sneakers</p>
+                        <small>price: $40.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r32"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$40.0</td>
+        </tr>
+        <tr class='subrow' id="r33">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/lp1.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>dell laptop</p>
+                        <small>price: $780.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r33"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$780.0</td>
+        </tr>
+        <tr class='subrow' id="r34">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/lp2.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Acer Gaming Laptop</p>
+                        <small>price: $270.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r34"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$270.0</td>
+        </tr>
+        <tr class='subrow' id="r35">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/lp3.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Lenovo L340 Gaming</p>
+                        <small>price: $360.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r35"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$360.0</td>
+        </tr>
+        <tr class='subrow' id="r36">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/lp4.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Acer Aspire 7</p>
+                        <small>price: $475.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r36"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$475.0</td>
+        </tr>
+        <tr class='subrow' id="r37">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/lp5.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Asus</p>
+                        <small>price: $555.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r37"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$555.0</td>
+        </tr>
+        <tr class='subrow' id="r38">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/lp6.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Hp Ultra Book</p>
+                        <small>price: $620.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r38"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$620.0</td>
+        </tr>
+        <tr class='subrow' id="r39">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/lp7.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Silver MacBook</p>
+                        <small>price: $750.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r39"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$750.0</td>
+        </tr>
+        <tr class='subrow' id="r40">
+            <td>
+                <div class="cart-info" id="shop1">
+                    <img src="eimgs/lp8.jpeg" alt="">
+                    <div class="prodinfo">
+                        <p>Samsung Laptop</p>
+                        <small>price: $840.00</small>
+                        <br>
+                        <a href="#" class="remove" data-product-id="r40"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                </div>
+            </td>
+            <td class="inp"><input type="snumber" value='1'></td>
+            <td class="sprice">$840.0</td>
+        </tr>
+        
+        
+        
+    </table>
+    <!-- <div class="total-price">
+        <h4>TOTAL :<span class="tprice">$0</span></h4>
+    </div> -->
+    <button class="buynow">BUY NOW</button>
+</div>
+<div class="payment">
+    <i class="fa-solid fa-circle-xmark"></i>
+    <br>
+    <label for="">Name</label>
+    <br>
+    <input type="text" placeholder="ex:ram" required>
+    <br>
+    <label for="">Phone No</label>
+    <br>
+    <input type="text" placeholder="ex:9163747484" required>
+    <br>
+    <label for="">Address</label>
+    <br>
+    <input type="text" required>
+    <h2>Card Information</h2>
+    <p>VISA</p>
+    <br>
+    <input type="text" placeholder="CardNumber" required>
+    <br>
+    <div class="final">
+        <input type="text" placeholder="mm" required>
+        <input type="text" placeholder="yyyy" required>
+        <input type="text" placeholder="cv" required>
+    </div>
+    <button class="pay" type="submit">Pay</button>
+
+
+</div>
+
+
+<div class="footers">
+    <div class="holdfoot">
+        <div class="foot1">
+            <h3>download our app</h3>
+            <p>download our app for andriod <br> and ios mobile phone</p>
+            <i class="fa-brands fa-google-play"></i>
+            <i class="fa-brands fa-apple"></i>
+        </div>
+        <div class="foot2">
+            <div class="logo1">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h2 class="footh">Shopify</h1>
+            </div>
+            <p>Empowering your shopping experience <br> with seamless convenience  and endless <br> possibilities</p>
+        </div>
+        <div class="foot3">
+            <h3>useful links</h3>
+            <ul>
+                <li>coupons</li>
+                <li>blog post</li>
+                <li>return policy</li>
+                <li>join affiliate</li>
+            </ul>
+        </div>
+        <div class="foot4">
+            <h3>follow us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+    let inp=document.querySelector('.input');
+    let sprice=document.querySelector('.sprice');
+    let tprice=document.querySelector('.tprice');
+    let pay=document.querySelector('.pay');
+    let payment=document.querySelector('.payment');
+    let buynow=document.querySelector('.buynow');
+    let cross=document.querySelector('.fa-circle-xmark');
+    pay.addEventListener('click',function(){
+        alert('payment successful');
+        payment.style.display='none';
+    });
+    buynow.addEventListener('click',function(){
+       
+        payment.style.display='block';
+        
+    });
+    cross.addEventListener('click',function(){
+       
+       payment.style.display='none';
+   });
+    // function hiderow(rowid){
+    //     let row=document.getElementById(rowid);
+    //     row.style.display='none';
+    // }
+    // function getqueryparam(name){
+    //     let urlparams=new URLSearchParams(window.location.search);
+    //     return urlparams.get(name);
+    // }
+    // let eleid=getqueryparam('element');
+    // if (eleid){
+    //     let element=document.getElementById(eleid);
+    //     if (element){
+    //         element.style.display='table-row';
+    //     }
+    // }
+    
+
+    // function displaycart(){
+    //     let cart=JSON.parse(localStorage.getItem('cart')) || [];
+    //     let cic=document.getElementById('card-items');
+    //     cic.forEach(item =>{
+    //         let lit=document.createElement('li');
+    //         lit.textContent=item;
+    //         cic.appendChild(lit);
+    //     });
+    //     if (cart.length==0){
+    //         cic.innerHTML=`<li> empty </li>`;
+    //     }
+    // }
+    let cart=JSON.parse(localStorage.getItem('cart')) || [];
+    console.log(cart);
+    cart.forEach(productid=>{
+        let row=document.getElementById(`${productid}`);
+        console.log(row);
+        if (row){
+            row.style.display='table-row';
+        }
+    });
+    
+    function removefromcart(productid){
+        let cart=JSON.parse(localStorage.getItem('cart')) || [];
+        cart=cart.filter(id => id !== productid);
+        localStorage.setItem('cart',JSON.stringify(cart));
+        renderCart();
+    }
+    document.querySelectorAll('.remove').forEach(link =>{
+        link.addEventListener('click',function(event){
+            event.preventDefault();
+            let productid=this.getAttribute('data-product-id');
+            console.log(productid);
+            alert('product has been removed refresh to see changes');
+            removefromcart(productid);
+        });
+    });
+    renderCart();
+
+
+    
+   
+
+    
+    
+
+
+</script>
+</body>
+</html>
